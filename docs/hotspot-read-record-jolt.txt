@@ -1,0 +1,13 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "hotspots": {
+        "*": {
+          "key": "id",
+          "*": "fields.&"
+        }
+      }
+    }
+  }
+  ]

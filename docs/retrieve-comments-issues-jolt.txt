@@ -1,0 +1,43 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "issues": {
+        "*": {
+          "comments": {
+            "*": {
+              "key": "comments.[&1].commentId",
+              "login": "comments.[&1].commentAuthor",
+              "htmlText": "comments.[&1].commentBody",
+              "createdAt": ["comments.[&1].createdDate", "comments.[&1].updatedDate"],
+              "isFeedback": {
+                "false": {
+                  "#public": "comments.[&3].commentVisibility"
+                },
+                "true": {
+                  "#private": "comments.[&3].commentVisibility"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "comments": {
+        "*": {
+          "commentId": "=toString"
+        }
+      }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "comments": []
+    }
+  }
+  ]

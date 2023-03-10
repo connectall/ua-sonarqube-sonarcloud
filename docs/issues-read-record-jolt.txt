@@ -1,0 +1,21 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "issues": {
+        "*": {
+          "key": "id",
+          "comments": {
+            "*": {
+              "htmlText": "fields.comments"
+            }
+          },
+          "attr": {
+            "jira-issue-key": "fields.jira-issue-key"
+          },
+          "*": "fields.&"
+        }
+      }
+    }
+  }
+  ]
