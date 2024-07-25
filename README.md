@@ -1,4 +1,4 @@
-# sonarqube-sonarcloud-universal-adapter
+# ua-sonarqube-sonarcloud
  Adapter can sync new issues like bug, code_smell, vulnerability; can sync new and updated hotspots.
 
 ## About:
